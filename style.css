@@ -228,7 +228,53 @@ span{
     display: inline-block;
 }
 
+/* Animaciones*/
 
+.hero{
+    background-image: linear-gradient(45deg, violet, purple );
+    padding: 50px 20px;
+    color: black;
+}
+
+.hero__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; 
+    align-items: center;
+}
+
+.hero__grid-content h1{
+    color: white;
+    font-size:40px ;
+    margin-bottom: 30px;
+    font-style: italic;
+
+}
+
+.hero__grid-content p{
+    margin-bottom: 20px;
+}
+
+.hero__grid-content a{
+    background-color:aliceblue;
+    color:rgb(218, 73, 97);
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.hero__grid-img{
+    border-radius: 10px;
+    transition: transform: 0.3s;
+}
+
+.hero__grid-img:hover{
+    transform: rotate(10deg);
+}
+   
+    
+
+}
 @media screen and (min-width: 320px){
 
     h2{
